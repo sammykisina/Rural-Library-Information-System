@@ -34,11 +34,11 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        if(auth()->user()->role == UserTypes::SUPERVISOR->value){ 
+        if (auth()->user()->role == UserTypes::SUPERVISOR->value) {
             return redirect()->intended(route('supervisor:dashboard', absolute: false));
         }
 
-        if(auth()->user()->role == UserTypes::VOLUNTEER->value){ 
+        if (auth()->user()->role == UserTypes::VOLUNTEER->value) {
             return redirect()->intended(route('volunteer:dashboard', absolute: false));
         }
 

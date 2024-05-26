@@ -21,6 +21,11 @@ export const supervisorRouters = [
         href: "/supervisor/books",
         icon: <Icons.books className="route_icon" />,
     },
+    {
+        name: "book Issues",
+        href: "/supervisor/books/issues",
+        icon: <Icons.arrowRightLeft className="route_icon" />,
+    },
 ];
 
 export const volunteerRouters = [
@@ -38,5 +43,10 @@ export const volunteerRouters = [
         name: "books",
         href: "/volunteer/books",
         icon: <Icons.books className="route_icon" />,
+    },
+    {
+        name: "book Issues",
+        href: "/volunteer/books/issues",
+        icon: <Icons.arrowRightLeft className="route_icon" />,
     },
 ];

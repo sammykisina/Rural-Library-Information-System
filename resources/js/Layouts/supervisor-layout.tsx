@@ -18,7 +18,7 @@ const SupervisorLayout: React.FC<SupervisorLayoutProps> = ({ children }) => {
     const user = usePage<PageProps>()?.props?.auth?.user;
 
     return (
-        <main className="relative min-h-screen">
+        <main className="relative min-h-screen font-Roboto">
             <Toaster />
 
             <Header />
@@ -29,12 +29,7 @@ const SupervisorLayout: React.FC<SupervisorLayoutProps> = ({ children }) => {
                         <SupervisorSiteSidebar />
                     </div>
 
-                    <div
-                        className={cn(
-                            "flex-1 w-full",
-                            user ? "xmd:ml-[10rem]" : ""
-                        )}
-                    >
+                    <div className={cn("flex-1 w-full xmd:ml-[200px]")}>
                         {children}
                     </div>
                 </div>

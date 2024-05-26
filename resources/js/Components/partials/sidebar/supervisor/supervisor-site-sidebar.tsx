@@ -1,6 +1,4 @@
 import { cn } from "@/lib/utils";
-import { PageProps } from "@/types";
-import { usePage } from "@inertiajs/react";
 import { ScrollArea } from "../../../ui/scroll-area";
 import SupervisorLinks from "./supervisor-links";
 
